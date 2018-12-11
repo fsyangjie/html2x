@@ -8,6 +8,7 @@ RUN sed -i -e 's/v3\.7/edge/g' /etc/apk/repositories && \
 
 RUN \
 apk update && apk upgrade && \
+apk add font-adobe-100dpi && \
 apk add bash firefox dbus ttf-freefont fontconfig imagemagick msttcorefonts-installer && \
 rm -rf /var/cache/apk/*
 
